@@ -35,6 +35,7 @@ import com.consideredhamster.yetanotherpixeldungeon.items.misc.OilLantern;
 import com.consideredhamster.yetanotherpixeldungeon.items.misc.Waterskin;
 import com.consideredhamster.yetanotherpixeldungeon.items.misc.Whetstone;
 import com.consideredhamster.yetanotherpixeldungeon.items.potions.EmptyBottle;
+import com.consideredhamster.yetanotherpixeldungeon.items.potions.PotionOfStrength;
 import com.consideredhamster.yetanotherpixeldungeon.items.rings.RingOfAccuracy;
 import com.consideredhamster.yetanotherpixeldungeon.items.rings.RingOfShadows;
 import com.consideredhamster.yetanotherpixeldungeon.items.scrolls.ScrollOfClairvoyance;
@@ -171,7 +172,7 @@ public enum HeroClass {
 //        new PotionOfInvisibility().quantity(30).identify().collect();
 //        new PotionOfMindVision().quantity(30).identify().collect();
 //        new PotionOfWisdom().quantity(12).identify().collect();
-//        new PotionOfStrength().quantity(4).identify().collect();
+        new PotionOfStrength().quantity(4).collect();
 //        new ScrollOfUpgrade().quantity(4).identify().collect();
 
         new Waterskin().setLimit(5).fill().collect();

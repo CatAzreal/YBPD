@@ -271,7 +271,7 @@ public abstract class Potion extends Item {
             if (harmful) {
                 setKnown();
             } else {
-                GLog.i("The flask shatters and " + color() + " liquid splashes harmlessly");
+                GLog.i(Ml.g("items.potions.potion.txt_shatter", color()));
             }
         }
     }
@@ -314,12 +314,12 @@ public abstract class Potion extends Item {
 
     @Override
     public String name() {
-        return Ml.g("items.potions.potion.name", (isTypeKnown() ? name : color + " potion"));
+        return Ml.g("items.potions.potion.name", (isTypeKnown() ? name : color + Ml.g("items.potions.potion.nameappend")));
     }
 
     @Override
     public String info() {
-        return Ml.g("items.potions.potion.info", (isTypeKnown() ? desc() : "This flask contains a swirling " + color + " liquid. Who knows what it will do when drunk or thrown?"));
+        return Ml.g("items.potions.potion.info", (isTypeKnown() ? desc() : Ml.g("items.potions.potion.infoappend", color)));
     }
 
 

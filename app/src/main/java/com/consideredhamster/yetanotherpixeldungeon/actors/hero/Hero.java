@@ -862,9 +862,9 @@ public class Hero extends Char {
             ready();
 
             YetAnotherPixelDungeon.scene().add(
-                    new WndOptions("Alchemy Pot", "Do you want to brew potions or cook meat? ",
-                            Utils.capitalize("Brew potions"),
-                            Utils.capitalize("Cook meat")) {
+                    new WndOptions(Ml.g("visuals.windows.wndalchemy.label"), Ml.g("visuals.windows.wndalchemy.message"),
+                            Utils.capitalize(Ml.g("visuals.windows.wndalchemy.optionbrew")),
+                            Utils.capitalize(Ml.g("visuals.windows.wndalchemy.optioncook"))) {
 
                         @Override
                         protected void onSelect(int index) {

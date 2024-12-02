@@ -252,7 +252,7 @@ public class Imp extends MobEvasive {
     public void vanish() {
         BuffActive.add(this, Invisibility.class, Random.Float(10.0f, 15.0f));
         if (Dungeon.visible[pos]) {
-            GLog.i(name + " vanishes from sight!");
+            GLog.i(Ml.g("actors.mobs.imp.vanish", name));
         }
     }
 

@@ -113,7 +113,7 @@ public class Statue extends MobPrecise {
         state = HUNTING;
         enemySeen = true;
 
-        GLog.w("The statue activates!");
+        GLog.w(Ml.g("actors.mobs.statue.activate"));
 
         spend(TICK);
     }

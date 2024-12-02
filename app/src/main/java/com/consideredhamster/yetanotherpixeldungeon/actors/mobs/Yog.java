@@ -59,7 +59,7 @@ import java.util.HashMap;
 public class Yog extends Mob {
 
     {
-        name = Dungeon.depth == Statistics.deepestFloor ? "Yog-Dzewa" : "echo of Yog-Dzewa";
+        name = Dungeon.depth == Statistics.deepestFloor ? Ml.g("actors.mobs.yog.mainname") : Ml.g("actors.mobs.yog.mainnamealt");
         info = Ml.g("actors.mobs.yog.info_3");
 
         spriteClass = YogSprite.class;
@@ -438,11 +438,11 @@ public class Yog extends Mob {
                     fist.sprite.parent.add(new AlphaTweener(fist.sprite, 1, 0.5f));
                     fist.sprite.emitter().burst(FlameParticle.FACTORY, 15);
 
-                    GLog.w("Burning fist was resurrected!");
+                    GLog.w(Ml.g("actors.mobs.yog.burningrespawned"));
                     super.detach();
                 } else {
                     warned = true;
-                    GLog.w("Burning fist will be resurrected soon!");
+                    GLog.w(Ml.g("actors.mobs.yog.burningrespawn"));
                     spend(Random.IntRange(FIST_RESPAWN_MIN, FIST_RESPAWN_MAX));
 
                 }
@@ -500,11 +500,11 @@ public class Yog extends Mob {
                     fist.sprite.emitter().burst(Speck.factory(Speck.TOXIC), 15);
 
 
-                    GLog.w("Rotting fist was resurrected!");
+                    GLog.w(Ml.g("actors.mobs.yog.rottingrespawned"));
                     super.detach();
                 } else {
                     warned = true;
-                    GLog.w("Rotting fist will be resurrected soon!");
+                    GLog.w(Ml.g("actors.mobs.yog.rottingrespawn"));
                     spend(Random.IntRange(FIST_RESPAWN_MIN, FIST_RESPAWN_MAX));
 
                 }

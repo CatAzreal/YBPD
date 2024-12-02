@@ -79,7 +79,7 @@ inventoryTitle = Ml.g("items.scrolls.scrollofidentify.inventorytitle");
         curUser.sprite.emitter().start(Speck.factory(Speck.QUESTION), 0.1f, Random.IntRange(6, 9));
 
         item.identify();
-        GLog.i("It is " + item);
+        GLog.i(Ml.g("items.scrolls.scrollofidentify.status", item));
 
 //        Badges.validateItemLevelAcquired(item);
 

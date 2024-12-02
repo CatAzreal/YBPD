@@ -460,7 +460,7 @@
 
               if (sprite.visible || mob.sprite.visible) {
 
-                  mob.sprite.showStatus(CharSprite.NEGATIVE, "sacrificed");
+                  mob.sprite.showStatus(CharSprite.NEGATIVE, Ml.g("actors.mobs.dwarvenking.sacrifice"));
                   mob.sprite.parent.add(new DrainLife(mob.pos, pos, null));
                   new Flare(6, 16).color(SpellSprite.COLOUR_DARK, true).show(mob.sprite, 2f);
 

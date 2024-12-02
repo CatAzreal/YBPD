@@ -434,7 +434,7 @@ public abstract class ThrowingWeapon extends Weapon {
 
         } else {
 
-            enemy.sprite.showStatus(CharSprite.DEFAULT, "ammo lost");
+            enemy.sprite.showStatus(CharSprite.DEFAULT, Ml.g("items.weapons.throwing.throwingweapon.status_broken"));
 
             if (this instanceof Harpoons) {
                 curUser.sprite.parent.add(new Chains(curUser.pos, cell, true));

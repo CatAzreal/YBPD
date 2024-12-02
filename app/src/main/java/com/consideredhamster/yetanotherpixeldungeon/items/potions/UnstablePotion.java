@@ -33,7 +33,7 @@ public class UnstablePotion extends Potion {
         shortName = "??";
 
         image = ItemSpriteSheet.POTION_UNSTABLE;
-        color = "layered";
+        color = Ml.g("items.potions.unstablepotion.color");
 
 //        harmful = true;
     }

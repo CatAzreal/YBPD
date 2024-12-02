@@ -215,7 +215,7 @@ public abstract class Char extends Actor {
                     GameScene.flash(0x330000);
                 }
 
-                Dungeon.hero.interrupt("You were awoken by an attack!");
+                Dungeon.hero.interrupt(Ml.g("actors.char.awoken"));
             }
 
             if (visibleFight) {
@@ -503,7 +503,7 @@ public abstract class Char extends Actor {
                 dmg += (dmg / 2 + (Random.Int(2) < dmg % 2 ? 1 : 0));
             }
 
-            Dungeon.hero.interrupt("You were awoken by an attack!");
+            Dungeon.hero.interrupt(Ml.g("actors.char.awoken"));
         }
 
         boolean amplified = false;

@@ -340,7 +340,7 @@ public abstract class Mob extends Char {
                 && !sprite.visible && state != PASSIVE && Level.distance(pos, Dungeon.hero.pos) == 2
                 && Dungeon.hero.detected(this) && Dungeon.hero.detected(this)
         ) {
-            Dungeon.hero.interrupt("You were awoken by a noise.");
+            Dungeon.hero.interrupt(Ml.g("actors.mobs.mob.noise"));
 
             if (!enemySeen) {
                 GLog.w(TXT_HEARD, name, state.status());
@@ -603,7 +603,7 @@ public abstract class Mob extends Char {
     protected void onRangedAttack(int cell) {
 
         if (enemy == Dungeon.hero) {
-            Dungeon.hero.interrupt("You were awoken by an attack!");
+            Dungeon.hero.interrupt(Ml.g("actors.mobs.mob.awokenattack"));
         }
 
         sprite.idle();

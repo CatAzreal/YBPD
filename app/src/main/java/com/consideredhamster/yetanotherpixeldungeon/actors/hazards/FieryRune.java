@@ -126,7 +126,7 @@ public class FieryRune extends Hazard {
         } else {
 
             this.duration += duration;
-            GLog.w("This rune seems to have to reached its limit already. Only duration is increased.");
+            GLog.w(Ml.g("actors.hazards.fieryrune.limit"));
 
         }
 

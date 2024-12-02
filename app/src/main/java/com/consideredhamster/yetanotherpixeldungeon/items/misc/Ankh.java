@@ -81,7 +81,7 @@ public class Ankh extends Item {
                 hero.belongings.ring2
         );
 
-        hero.sprite.showStatus(CharSprite.POSITIVE, "resurrected!");
+        hero.sprite.showStatus(CharSprite.POSITIVE, Ml.g("items.misc.ankh.resurrected"));
         GLog.w(TXT_RESURRECT);
     }
 

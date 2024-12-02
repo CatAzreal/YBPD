@@ -145,7 +145,7 @@ public class Mimic extends MobHealthy {
             devour(item);
 
             if (Dungeon.visible[pos]) {
-                GLog.w("Mimic swallows %s lying on the floor!", item.toString());
+                GLog.w(Ml.g("actors.mobs.mimic.devour", item.toString()));
             }
 
             spend(TIME_TO_DEVOUR);

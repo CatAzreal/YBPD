@@ -79,13 +79,13 @@ public class ScrollOfTorment extends Scroll {
 
         switch (count) {
             case 0:
-                GLog.i("Suddenly your whole mind is engulfed in pure agony!");
+                GLog.i(Ml.g("items.scrolls.scrolloftorment.nothing"));
                 break;
             case 1:
-                GLog.i("Suddenly your whole mind and the " + affected.name + " start writhing in agony!");
+                GLog.i(Ml.g("items.scrolls.scrolloftorment.single", affected.name));
                 break;
             default:
-                GLog.i("Suddenly your whole mind and the creatures all around you start writhing in agony!");
+                GLog.i(Ml.g("items.scrolls.scrolloftorment.multiple"));
         }
 
 

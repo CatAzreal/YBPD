@@ -94,7 +94,7 @@ public class WndSadGhost extends Window {
             Dungeon.level.drop(reward, ghost.pos).sprite.drop();
         }
 
-        ghost.yell("Farewell, adventurer!");
+        ghost.yell(Ml.g("visuals.windows.wndsadghost.yell"));
         ghost.die(null);
 
         Ghost.Quest.complete();

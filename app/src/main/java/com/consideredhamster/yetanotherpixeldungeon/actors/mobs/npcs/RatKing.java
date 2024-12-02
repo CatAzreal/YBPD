@@ -70,10 +70,10 @@ public class RatKing extends NPC {
         sprite.turnTo(pos, Dungeon.hero.pos);
         if (state == SLEEPING) {
             notice();
-            yell("I'm not sleeping!");
+            yell(Ml.g("actors.mobs.npcs.ratking.wake"));
             state = WANDERING;
         } else {
-            yell("What is it? I have no time for this nonsense. My kingdom won't rule itself!");
+            yell(Ml.g("actors.mobs.npcs.ratking.yell"));
         }
     }
 

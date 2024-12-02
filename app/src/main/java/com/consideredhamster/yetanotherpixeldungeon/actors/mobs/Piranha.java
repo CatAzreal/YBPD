@@ -91,7 +91,7 @@ public class Piranha extends MobEvasive {
     public void submerge() {
         BuffActive.add(this, Invisibility.class, Random.Float(15.0f, 20.0f));
         if (Dungeon.visible[pos]) {
-            GLog.i(name + " dives deeper into the water!");
+            GLog.i(Ml.g("actors.mobs.piranha.submerge", name));
         }
     }
 

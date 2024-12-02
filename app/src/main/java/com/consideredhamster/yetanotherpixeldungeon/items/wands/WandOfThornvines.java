@@ -89,7 +89,7 @@ public class WandOfThornvines extends WandUtility {
                 if (candidates.size() > 0) {
                     Thornvine.spawnAt(stats, level, candidates.get(Random.Int(candidates.size())));
                 } else {
-                    GLog.i("nothing happened");
+                    GLog.i(Ml.g("items.wands.wandofthornvines.no_space"));
                 }
             }
         }

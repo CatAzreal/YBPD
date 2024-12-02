@@ -23,6 +23,7 @@ package com.consideredhamster.yetanotherpixeldungeon.scenes;
 import com.consideredhamster.yetanotherpixeldungeon.Badges;
 import com.consideredhamster.yetanotherpixeldungeon.Dungeon;
 import com.consideredhamster.yetanotherpixeldungeon.actors.hero.HeroClass;
+import com.consideredhamster.yetanotherpixeldungeon.multilang.Ml;
 import com.consideredhamster.yetanotherpixeldungeon.visuals.Assets;
 import com.consideredhamster.yetanotherpixeldungeon.visuals.ui.Archs;
 import com.consideredhamster.yetanotherpixeldungeon.visuals.ui.RedButton;
@@ -163,7 +164,7 @@ public class SurfaceScene extends PixelScene {
             frame.hardlight(0xDDEEFF);
         }
 
-        RedButton gameOver = new RedButton("Game Over") {
+        RedButton gameOver = new RedButton(Ml.g("scenes.SurfaceScene.gameover")) {
             protected void onClick() {
                 Game.switchScene(TitleScene.class);
             }

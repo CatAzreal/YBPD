@@ -1324,7 +1324,7 @@ public class Hero extends Char {
                 Buff.detach(this, Light.class);
                 restoreHealth = true;
             } else {
-                GLog.n("You are too hungry to sleep right now.");
+                GLog.n(Ml.g("actors.hero.hero.hungrysleep"));
             }
         }
 
@@ -1507,7 +1507,7 @@ public class Hero extends Char {
                 Invisibility.dispel(ch);
 
                 ch.sprite.showStatus(CharSprite.WARNING, "!");
-                GLog.i("You stumble into hidden " + ch.name + "!");
+                GLog.i(Ml.g("actors.hero.hero.discoverhidden", ch.name));
                 Camera.main.shake(1, 0.15f);
 
             }
@@ -1731,22 +1731,22 @@ public class Hero extends Char {
             ArrayList bonusList = new ArrayList();
 
             if (hpBonus > 0)
-                bonusList.add(Utils.format("+%d hp", hpBonus));
+                bonusList.add(Utils.format("+%d ", hpBonus) + Ml.g("actors.hero.hero.hp"));
             if (attBonus > 0)
-                bonusList.add(Utils.format("+%d acc", attBonus));
+                bonusList.add(Utils.format("+%d ", attBonus) + Ml.g("actors.hero.hero.att"));
             if (defBonus > 0)
-                bonusList.add(Utils.format("+%d dex", defBonus));
+                bonusList.add(Utils.format("+%d ", defBonus) + Ml.g("actors.hero.hero.dex"));
             if (magBonus > 0)
-                bonusList.add(Utils.format("+%d mag", magBonus));
+                bonusList.add(Utils.format("+%d ", magBonus) + Ml.g("actors.hero.hero.mag"));
 
             if (strBonus > 0)
-                bonusList.add(Utils.format("+%d strength", strBonus));
+                bonusList.add(Utils.format("+%d ", strBonus) + Ml.g("actors.hero.hero.strength"));
             if (detBonus > 0)
-                bonusList.add(Utils.format("+%d%% perception", detBonus));
+                bonusList.add(Utils.format("+%d%% ", detBonus) + Ml.g("actors.hero.hero.perception"));
             if (stlBonus > 0)
-                bonusList.add(Utils.format("+%d%% stealth", stlBonus));
+                bonusList.add(Utils.format("+%d%% ", stlBonus) + Ml.g("actors.hero.hero.stealth"));
             if (wilBonus > 0)
-                bonusList.add(Utils.format("+%d%% attunement", wilBonus));
+                bonusList.add(Utils.format("+%d%% ", wilBonus) + Ml.g("actors.hero.hero.attunement"));
 
             if (sprite != null) {
                 GLog.p(TXT_NEW_LEVEL, lvl, TextUtils.join(", ", bonusList));

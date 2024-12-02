@@ -471,13 +471,13 @@ public class Item implements Bundlable {
                                 CharSprite sprite = Dungeon.hero.sprite;
 
                                 if (this instanceof Weapon) {
-                                    sprite.showStatus(CharSprite.NEUTRAL, "weapon degraded");
+                                    sprite.showStatus(CharSprite.NEUTRAL, Ml.g("items.item.weapon_degraded"));
                                 } else if (this instanceof Shield) {
-                                    sprite.showStatus(CharSprite.NEUTRAL, "shield degraded");
+                                    sprite.showStatus(CharSprite.NEUTRAL, Ml.g("items.item.shield_degraded"));
                                 } else if (this instanceof BodyArmor) {
-                                    sprite.showStatus(CharSprite.NEUTRAL, "armor degraded");
+                                    sprite.showStatus(CharSprite.NEUTRAL, Ml.g("items.item.armor_degraded"));
                                 } else if (this instanceof Wand) {
-                                    sprite.showStatus(CharSprite.NEUTRAL, "wand degraded");
+                                    sprite.showStatus(CharSprite.NEUTRAL, Ml.g("items.item.wand_degraded"));
                                 }
 
                                 Sample.INSTANCE.play(Assets.SND_DEGRADE);

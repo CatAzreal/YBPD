@@ -84,7 +84,7 @@ public class Revival extends Armour.Glyph {
 
         Debuff.removeAll(hero);
 
-        hero.sprite.showStatus(CharSprite.POSITIVE, "resurrected!");
+        hero.sprite.showStatus(CharSprite.POSITIVE, Ml.g("items.armours.glyphs.revival.resurrected"));
         GLog.w(TXT_RESURRECT);
     }
 }

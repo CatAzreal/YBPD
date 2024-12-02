@@ -54,13 +54,13 @@ public class PotionOfStrength extends Potion {
             hero.sprite.showStatus(CharSprite.POSITIVE, "%+dHP", restore);
         }
 
-        hero.sprite.showStatus(CharSprite.POSITIVE, "+1 str, +1 mag, +%d hp", hpBonus);
+        hero.sprite.showStatus(CharSprite.POSITIVE, Ml.g("items.potions.potionofstrength.stat") + ", +%d hp", hpBonus);
 
         hero.sprite.emitter().burst(Speck.factory(Speck.MASTERY), 12);
 
         Buff.detach(hero, Withered.class);
 
-        GLog.p("Newfound strength surges through your body and mind.");
+        GLog.p(Ml.g("items.potions.potionofstrength.status"));
 
         QuickSlot.refresh();
 

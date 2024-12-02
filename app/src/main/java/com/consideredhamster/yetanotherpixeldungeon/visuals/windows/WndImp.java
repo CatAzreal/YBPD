@@ -57,16 +57,16 @@ public class WndImp extends Window {
 
         switch (Dungeon.hero.heroClass) {
             case WARRIOR:
-                story = Utils.format(story, "paladin");
+                story = Utils.format(story, Ml.g("visuals.windows.wndimp.warrior"));
                 break;
             case SCHOLAR:
-                story = Utils.format(story, "sorcerer");
+                story = Utils.format(story, Ml.g("visuals.windows.wndimp.scholar"));
                 break;
             case BRIGAND:
-                story = Utils.format(story, "assassin");
+                story = Utils.format(story, Ml.g("visuals.windows.wndimp.brigand"));
                 break;
             case ACOLYTE:
-                story = Utils.format(story, "ranger");
+                story = Utils.format(story, Ml.g("visuals.windows.wndimp.acolyte"));
                 break;
         }
 

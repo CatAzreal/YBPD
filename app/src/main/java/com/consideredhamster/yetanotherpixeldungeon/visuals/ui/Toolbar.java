@@ -272,7 +272,7 @@ public class Toolbar extends Component {
                 return;
 
             if (cell < 0 || cell > Level.LENGTH || !Level.fieldOfView[cell] && !Dungeon.level.mapped[cell]) {
-                GameScene.show(new WndMessage("You don't know what is there."));
+                GameScene.show(new WndMessage(Ml.g("visuals.ui.toolbar.outofbounds")));
                 return;
             }
 

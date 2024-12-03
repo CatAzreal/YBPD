@@ -2267,5 +2267,6 @@
 	"visuals.windows.wndtutorial.txt_titles_4": "Учебник - Расходные материалы",
 	"visuals.windows.wndtutorial.txt_titles_5": "Учебник - Жители",
 	"visuals.windows.wndwandmaker.txt_farewell": "Удачи в вашем квесте, %s!",
-	"visuals.windows.wndwandmaker.txt_message": "О, вижу, вы справились! Надеюсь, это не доставило вам слишком много хлопот. Как я и обещал, вы можете выбрать один из моих высококачественных жезлов."
+	"visuals.windows.wndwandmaker.txt_message": "О, вижу, вы справились! Надеюсь, это не доставило вам слишком много хлопот. Как я и обещал, вы можете выбрать один из моих высококачественных жезлов.",
+	"visuals.windows.wndlang.title": "Select Language"
 }

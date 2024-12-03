@@ -2267,5 +2267,6 @@
 	"visuals.windows.wndtutorial.txt_titles_4": "教程-消耗物品",
 	"visuals.windows.wndtutorial.txt_titles_5": "教程-地牢住民",
 	"visuals.windows.wndwandmaker.txt_farewell": "祝你在试炼中好运，%s！",
-	"visuals.windows.wndwandmaker.txt_message": "哦，看样子你成功了！希望这件事没有对你造成太多困扰。就像我承诺的，你可以选择我制作的一把高品质法杖。"
+	"visuals.windows.wndwandmaker.txt_message": "哦，看样子你成功了！希望这件事没有对你造成太多困扰。就像我承诺的，你可以选择我制作的一把高品质法杖。",
+	"visuals.windows.wndlang.title": "语言选择"
 }

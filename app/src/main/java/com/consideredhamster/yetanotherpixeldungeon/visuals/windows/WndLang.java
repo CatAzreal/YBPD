@@ -15,13 +15,24 @@ import com.watabou.noosa.tweeners.Tweener;
 
 public class WndLang extends Window {
 
-    private static final String TITLE = "Select Language";
-    private static final String[] LANGUAGES = { "English", "Chinese", "Русский" };
+    private static final String TITLE = Ml.g("visuals.windows.wndlang.title");
+    private static final String[] LANGUAGES = {
+            "English",
+            "Chinese",
+            "Русский",
+            "Español",
+//            "Français",
+//            "Deutsch",
+//            "Italiano",
+//            "Português",
+//            "Japanese",
+//            "Korean"
+    };
     private static final int WIDTH = 112;
     private static final int BTN_HEIGHT = 20;
     private static final int GAP = 2;
 
-    private static final String EXTRA_TEXT = "The Russian language is machine translated and without any oversight, mistranslation and incorrect line translation might be possible.";
+    private static final String EXTRA_TEXT = "All languages except English and Chinese are machine-translated, incorrect translations may occur. If you would like to contribute to the translation, please visit the GitHub page or take a look at the Paratranz project.";
 
     // Configurable delay in seconds
     private static final float RESTART_DELAY = 3f; // Set your desired delay here
@@ -54,6 +65,27 @@ public class WndLang extends Window {
                             break;
                         case "Русский":
                             Ml.saveLanguageSetting("ru");
+                            break;
+                        case "Español":
+                            Ml.saveLanguageSetting("es");
+                            break;
+                        case "Français":
+                            Ml.saveLanguageSetting("fr");
+                            break;
+                        case "Deutsch":
+                            Ml.saveLanguageSetting("de");
+                            break;
+                        case "Italiano":
+                            Ml.saveLanguageSetting("it");
+                            break;
+                        case "Português":
+                            Ml.saveLanguageSetting("pt");
+                            break;
+                        case "Japanese":
+                            Ml.saveLanguageSetting("ja");
+                            break;
+                        case "Korean":
+                            Ml.saveLanguageSetting("ko");
                             break;
                     }
                     parent.add(new WndMessage("YAPD will quit in 3 seconds to apply the language changes, if the game fails to automatically quit, please manually quit the application instead."));
